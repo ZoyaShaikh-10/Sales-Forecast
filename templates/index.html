@@ -1,0 +1,147 @@
+
+  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">  
+    <title>Sales Prediction</title>
+  </head>
+  
+  <body>
+    <div class="hello">
+    <div class = 'text'>
+        <h1 class = 'heading'>Sales Forecast.</h1>
+    </div>
+    <div class="container-main">
+    
+        <p class = 'imp'>Please Enter values for the following fields</p>
+        <form class="form-horizontal" action="{{ url_for('predict')}}"method="post">
+
+
+      <div class="form-group">
+        <div class="col-sm-10">
+          <h1 class = "product-info"> Product Info: </h1>
+          <input  class="form-control" type="text" name="Item_MRP" placeholder="Product MRP",  required="required" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-10">
+          <h1 class = "store-info"> Store Info:</h1>
+        <input  class="form-control" type= "text" name="Outlet_Establishment_Year" placeholder="Store Establishment Year",  required="required"/>
+        </div>
+     </div>
+
+      <div class="form-group">
+        <div class="col-sm-10">
+        <input  class="form-control" type= "text" name="Item_Visibility" placeholder="Product Visibility",  required="required"/>
+        </div>
+      </div>
+
+       
+      
+
+  
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <select class="form-control" type="number"  name="Outlet_Location_Type" required="required">
+            <option value="np.NAN">Store Location Type</option>
+            <option value="0">Tier 1</option>
+            <option value="1">Tier 2</option>
+            <option value="2">Tier 3</option>
+          
+      </select>
+    </div>
+    </div>
+      
+      <div class="form-group">
+        <div class="col-sm-10">
+          <select class="form-control" type="number" name="Item_Type" required="required">
+                <option value="0">Product Type</option>
+                <option value="0">Fruits and Vegetables</option>
+
+                <option value="1">Snacks</option>
+                <option value="2">Household</option>
+                <option value="3">Frozen Foods</option>
+                <option value="4">Dairy</option>
+                <option value="5">Canned</option>
+                <option value="6">Baking Goods</option>
+                <option value="7">Health and Hygiene</option>
+                <option value="8">Soft Drinks</option>
+                <option value="9">Meat</option>
+                <option value="10">Breads</option>
+                <option value="11">Hard Drinks</option>
+                <option value="12">Starchy Foods</option>
+                <option value="13">Breakfast</option>
+                <option value="14">Seafood</option>
+                <option value="15">Others</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-10">
+          <select class="form-control" type="number"  name="Outlet_Type" required="required">
+                <option value="0">Store Type</option>
+                <option value="0">Supermarket Type 1</option>
+                <option value="1">Supermarket Type 2</option>
+                <option value="2">Supermarket Type 3</option>
+                <option value="3">Grocery Store</option>
+
+
+          </select>
+        </div>
+        </div>
+
+      <div class="form-group">
+        <div class="col-sm-10">
+          <select class="form-control" type="number"  name="Item_Fat_Content" required="required">
+                <option value="0">Product Fat</option>
+                <option value="0">Low Fat</option>
+                <option value="1">Regular</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-10">
+          <select class="form-control"  type="number" name="Outlet_Size" required="required">
+                <option value="np.NAN">Store Size</option>
+                <option value="2">Small</option>
+                <option value="1">Medium</option>
+                <option value="0">Large</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-10">
+        <input  class="form-control" type= "text" name="Item_Weight" placeholder="Weight of Product",  required="required"/>
+      
+        </div>
+      </div>
+
+      <div class="r">
+      <div class="form-group1">
+        <div class="button">
+         <center><button type="submit" class="button2">PREDICT.<br> {{prediction_text}}</button><center/>
+        </div>
+      </div>
+      </div>
+
+    </form>
+  
+    
+
+
+  </div>
+  </div>
+
+  </body>
+</html>

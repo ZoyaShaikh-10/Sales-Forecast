@@ -1,0 +1,122 @@
+.body{
+    background:rgb(97, 66, 66)
+}
+.hello{
+    background: rgb(20, 20, 20);
+    margin-top:0%;
+    padding-top: 3%;
+}
+
+
+.heading{
+    margin-left: 26%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(245, 245, 245, 0.863);
+    padding-top: 15%;
+    background: rgba(81, 80, 88, 0.548);
+    width: 50%;
+    padding: 2%;
+    padding-left: 17%
+}
+.container-main{
+    margin-top: 1.5%;
+    background: rgba(81, 80, 88, 0.548);
+    width: 60%;
+    margin-left: 22%;
+    
+}
+.form-group1{
+    top: 50%;
+    /* margin-left: 0%; */
+    /* padding: 0% */
+   
+}
+.r{
+    padding: 30%;
+    padding-top: 30%;
+    padding-left: 34%;
+    /* padding-right: 30%; */
+    padding-bottom: 0;
+}
+
+.button2{ 
+    padding: 4%;
+    font-size: large;
+    width: 70%;
+    padding-top: 3%;
+    margin-right: 10%;
+    margin-top: 1.0%;
+    margin-bottom: 20%;
+
+    color:white;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background: rgb(29, 23, 23);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+} 
+.store-info , .product-info{
+    color: pink;
+    font-size: medium;
+    padding-left:70%; 
+    padding-top: 5%;
+    /* background: whitesmoke; */
+    width: 20%;
+    font-style:bold; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-group{
+    /* background: gray; */
+    width:53%;
+    margin-top:1%;
+    /* padding: 0.5%; */
+    padding-right: 25%;
+    float: left
+}
+
+.form-control{
+    background: white;
+    margin: 0.1%;
+    margin-left: 70%;
+    color: black;
+    /* float: left; */
+    
+
+   
+}
+
+::-webkit-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+.col-sm-10{
+    padding-right: 25%;
+    padding: 2%;
+    
+}
+
+.imp{
+    color: white;
+    font-size: large;
+    margin-left: 25%;
+    padding-top: 2%;
+    text-decoration: underline;
+}
+
+
+
+.holder{
+    margin-left: 18%;
+    background: rgba(146, 136, 241, 0.548);
+    font-size: small;
+    width: 55%;
+    padding: 2%;
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
