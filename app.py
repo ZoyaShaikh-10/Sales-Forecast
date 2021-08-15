@@ -28,7 +28,7 @@ def predict():
         year = int(request.form['Outlet_Establishment_Year'])
         size = int(request.form['Outlet_Size'])
         location = int(request.form['Outlet_Location_Type'])
-        outlet_type = int(request.form['Outlet_type'])
+        outlet_type = int(request.form['Outlet_Type'])
        
 
         int_features = [weight, item_fat, visibility,mrp,item_type,  year, size, location, outlet_type ]
