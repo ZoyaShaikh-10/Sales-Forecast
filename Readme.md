@@ -4,12 +4,12 @@ A sales forecast is a prediction of future sales revenue. Sales forecasts are us
 Deployment mode : Heroku
 link : https://sales-forecast-flask.herokuapp.com/
 
-<br>
+</br>
 
 Video :
+</br>
+<img src="./readmegif.gif", alt="Sales Forecast">
 
-<img src="./readmegif.gif", alt="Sales Forecast", height = "520">
-<br>
 
 # Project Overview.
 
