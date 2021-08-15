@@ -38,3 +38,5 @@ link : https://sales-forecast-flask.herokuapp.com/
 
 
 
+
+THANK YOU!
