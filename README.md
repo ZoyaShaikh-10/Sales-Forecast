@@ -16,9 +16,8 @@ Video :
 # Project Overview.
 
 - Predicting Sales for Big Mart.
-- Trying Machine learning Algorithms
-- Building Pipeline using best model
-
+- Building using Random Forest Regressor
+- Save and deploy 
 # Project Structure.
 
 - Importing Data
