@@ -2,7 +2,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 import pandas as pd
-import encoding
+
 
 
 model = pickle.load(open('randomforest.pkl', 'rb'))
@@ -24,13 +24,14 @@ def predict():
         Item_fat = int(request.form['Item_Fat_Content'])
         visibility = float(request.form['Item_Visibility'])
         mrp = int(float(request.form['Item_MRP']))
-        type = int(request.form['Item_Type'])
+        item_type = int(request.form['Item_Type'])
         year = int(request.form['Outlet_Establishment_Year'])
         size = int(request.form['Outlet_Size'])
         location = int(request.form['Outlet_Location_Type'])
-        type = int(request.form['Outlet_Type'])
+        outlet_type = int(request.form['Outlet_type'])
+       
 
-        int_features = [weight, Item_fat, visibility, type,mrp,  year, size, location, type]
+        int_features = [weight, Item_fat, visibility,mrp,item_type,  year, size, location, outlet_type ]
         final_features = [np.array(int_features)]
         prediction = model.predict(final_features)
 
