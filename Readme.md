@@ -8,7 +8,7 @@ link : https://sales-forecast-flask.herokuapp.com/
 
 Video :
 </br>
-<img src="readmegif.gif", alt="Sales Forecast">
+<img src="./readmegif.gif", alt="Sales Forecast">
 
 
 # Project Overview.
