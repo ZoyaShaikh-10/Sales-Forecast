@@ -8,7 +8,7 @@ link : https://sales-forecast-flask.herokuapp.com/
 
 Video :
 
-<img src="./readme.gif", alt="Sales Forecast", height = "520">
+<img src="./readmegif.gif", alt="Sales Forecast", height = "520">
 <br>
 
 # Project Overview.
