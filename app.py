@@ -21,7 +21,7 @@ def predict():
     
     if request.method == 'POST': 
         weight = float(request.form['Item_Weight'])
-        Item_fat = int(request.form['Item_Fat_Content'])
+        item_fat = int(request.form['Item_Fat_Content'])
         visibility = float(request.form['Item_Visibility'])
         mrp = int(float(request.form['Item_MRP']))
         item_type = int(request.form['Item_Type'])
@@ -31,7 +31,7 @@ def predict():
         outlet_type = int(request.form['Outlet_type'])
        
 
-        int_features = [weight, Item_fat, visibility,mrp,item_type,  year, size, location, outlet_type ]
+        int_features = [weight, item_fat, visibility,mrp,item_type,  year, size, location, outlet_type ]
         final_features = [np.array(int_features)]
         prediction = model.predict(final_features)
 
